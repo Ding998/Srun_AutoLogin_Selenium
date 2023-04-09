@@ -24,7 +24,7 @@
 3. 修改python脚本
     - 下载AutoLogin2UCAS.py到本地
     - 使用记事本打开AutoLogin2UCAS.py
-    - 替换第13/14行的xxxxxxxxxxxx/xxxxxxxxxxxx为你的登录账号/密码
+    - 替换第13/14行的xxxxxxxx/xxxxxxxx为你的登录账号/密码
     - 第9行的URL是登录页面网址，视情况修改
     - 第17行指定浏览器，如果电脑没有Chrome可以替换为
         - Edge浏览器：```driver = webdriver.Edge()```
