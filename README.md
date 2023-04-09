@@ -39,7 +39,7 @@
         <div align="center">
             <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/03%20dist_exe.png" alt="Editor" width="547">
         </div>    
-5. 在任务计划程序中创建任务，周期性运行AutoLogin2UCAS.exe
+5. 在任务计划程序中创建任务，周期性执行AutoLogin2UCAS.exe
     - 打开任务计划程序：<kbd>Win</kbd>+<kbd>R</kbd> &rArr; <kbd>t</kbd><kbd>a</kbd><kbd>s</kbd><kbd>k</kbd><kbd>s</kbd><kbd>c</kbd><kbd>h</kbd><kbd>d</kbd><kbd>.</kbd><kbd>m</kbd><kbd>s</kbd><kbd>c</kbd> &rArr; <kbd>Enter</kbd>
     - 点击右侧栏的“创建任务…”
         <div align="center">
