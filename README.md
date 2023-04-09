@@ -63,7 +63,7 @@
         </div>
         
 ## 补充说明
-- 根据我的经验，每次“登录”或“注销”后会有几秒到几十秒的时间无法加载出登录页面。如果你按照以上的截图设置了任务计划，那等一两分钟就好了。 
+- 根据我的经验，每次“登录”或“注销”后会有几秒到几十秒的时间无法加载出登录页面。如果你按照以上的截图设置了任务，那等一两分钟就好了。 
 - <span id="jump">不认识“地址栏”的看下图：</span>
     <div align="center">
         <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/01%20cmd_currentDir.png" alt="Editor" width="446">
