@@ -2,23 +2,33 @@
 深澜软件校园网自动登录（基于Selenium的Python脚本，国科大中关村宿舍区测试）
 
 ## 背景
-宿舍有台电脑，日常远程访问该电脑，但深澜校园网时不时自动登出，断网后得回去重新登录。
+日常需要远程访问宿舍的电脑，但宿舍的深澜校园网时不时自动登出，导致断网。
 
 ## 目标
 周期性检测深澜校园网的登录状态，一旦断联，自动登录。
 
-## 具体步骤
+## AutoLogin2UCAS.py功能
+1. 判断登录页面的状态
+    - 如果页面有“登录”按钮，即有id为login-account的网页元素，判定为**未登录**状态
+    - 如果页面有“注销”按钮，即有id为logout的网页元素，判定为**已登录**状态
+    - 等待网页加载的时间为3s，超过3s没有结果则判定超时
+2. 如果登录页面处在**未登录**状态，自动填写用户名（username）和密码（password），点击登录（login-account）按钮
+
+## 使用方法
 1. 安装[Python](https://www.python.org/downloads/windows/)，配置环境变量
     - 不详述
-2. 安装selenium包和pyinstaller包
+2. 安装selenium包（用于模拟浏览器）和pyinstaller包（用于打包exe）
     - <kbd>Win</kbd>+<kbd>R</kbd> &rArr; <kbd>c</kbd><kbd>m</kbd><kbd>d</kbd> &rArr; <kbd>Enter</kbd>
     - ```pip3 install selenium```
     - ```pip3 install pyinstaller```
-3. 修改脚本AutoLogin2UCAS.py
+3. 修改python脚本
     - 下载AutoLogin2UCAS.py到本地
     - 使用记事本打开AutoLogin2UCAS.py
     - 修改第13&14行的登录账号&密码为你的
     - 第9行的URL是登录页面网址，视情况修改
+    - 第17行指定浏览器，如果电脑没有Chrome可以替换为
+        - Edge浏览器：```driver = webdriver.Edge()```
+        - FireFox浏览器：```driver = webdriver.FireFox()```
 4. 将修改后的python脚本打包成exe文件
     - 到AutoLogin2UCAS.py的本地目录下，在地址栏直接输入<kbd>c</kbd><kbd>m</kbd><kbd>d</kbd><kbd>Enter</kbd>
     - ```pyinstaller -F -w AutoLogin2UCAS.py```
@@ -45,10 +55,9 @@
         <div align="center">
             <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/09%20taskschd_5.PNG" alt="Editor" width="474">
         </div>
-
-
-   
         
+## 补充说明
+根据我的经验，每次“登录”或“注销”后会有几秒到几十秒的时间无法加载出登录页面。如果你按照上图所示设置了任务计划程序，那等一两分钟就好了。     
     
     
     
