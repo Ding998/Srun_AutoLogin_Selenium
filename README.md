@@ -24,7 +24,7 @@
 3. 修改python脚本
     - 下载AutoLogin2UCAS.py到本地
     - 使用记事本打开AutoLogin2UCAS.py
-    - 修改第13&14行的登录账号&密码为你的
+    - 替换第13/14行的xxxxxxxxxxxx/xxxxxxxxxxxx为你的登录账号/密码
     - 第9行的URL是登录页面网址，视情况修改
     - 第17行指定浏览器，如果电脑没有Chrome可以替换为
         - Edge浏览器：```driver = webdriver.Edge()```
@@ -33,7 +33,7 @@
     - 到AutoLogin2UCAS.py的本地目录下，在地址栏直接输入<kbd>c</kbd><kbd>m</kbd><kbd>d</kbd><kbd>Enter</kbd>
     - ```pyinstaller -F -w AutoLogin2UCAS.py```
     - 然后在当前目录下会产生几个文件和文件夹，打开dist文件夹，其中AutoLogin2UCAS.exe就是我们需要的可执行文件
-5. 在任务计划程序中添加任务，周期性运行AutoLogin2UCAS.exe
+5. 在任务计划程序中创建任务，周期性运行AutoLogin2UCAS.exe
     - 打开任务计划程序：<kbd>Win</kbd>+<kbd>R</kbd> &rArr; <kbd>t</kbd><kbd>a</kbd><kbd>s</kbd><kbd>k</kbd><kbd>s</kbd><kbd>c</kbd><kbd>h</kbd><kbd>d</kbd><kbd>.</kbd><kbd>m</kbd><kbd>s</kbd><kbd>c</kbd> &rArr; <kbd>Enter</kbd>
     - 点击右侧栏的“创建任务…”
         <div align="center">
