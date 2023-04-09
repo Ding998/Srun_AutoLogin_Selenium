@@ -10,11 +10,15 @@ schoolWebURL = 'http://124.16.81.61/srun_portal_success?ac_id=1&theme=pro'
 #schoolWebURL = 'http://124.16.81.61'
 
 # 用户信息（修改为你的帐号&密码）
-username = 'xxxxxxxxxxxx'   # 登录邮箱
-password = 'xxxxxxxxxxxx'   # 登录密码
+username = 'xxxxxxxx'   # 登录邮箱
+password = 'xxxxxxxx'   # 登录密码
+
+# 指定浏览器
+driver = webdriver.Chrome()
+#driver = webdriver.Edge()
+#driver = webdriver.FireFox()
 
 # 打开登录页面
-driver = webdriver.Chrome()
 driver.get(schoolWebURL)
 time.sleep(3)
 #driver.refresh()
