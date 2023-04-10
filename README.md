@@ -34,37 +34,37 @@
     - ```pyinstaller -F -w AutoLogin2UCAS.py```
     - 然后在当前目录下会产生几个文件和文件夹，打开dist文件夹，其中AutoLogin2UCAS.exe就是我们需要的可执行文件
         <div align="center">
-            <img src="./FIG/02%20after_pyinstaller.png" alt="02 after_pyinstaller" width="460">
+            <img src="./FIG/02%20after_pyinstaller.png" alt="02 after_pyinstaller.png" width="460">
         </div>
         <div align="center">
-            <img src="./FIG/03%20dist_exe.png" alt="03 dist_exe" width="547">
+            <img src="./FIG/03%20dist_exe.png" alt="03 dist_exe.png" width="547">
         </div>    
 5. 在任务计划程序中创建任务，周期性执行AutoLogin2UCAS.exe
     - 打开任务计划程序：<kbd>Win</kbd>+<kbd>R</kbd> &rArr; <kbd>t</kbd><kbd>a</kbd><kbd>s</kbd><kbd>k</kbd><kbd>s</kbd><kbd>c</kbd><kbd>h</kbd><kbd>d</kbd><kbd>.</kbd><kbd>m</kbd><kbd>s</kbd><kbd>c</kbd> &rArr; <kbd>Enter</kbd>
     - 点击右侧栏的“创建任务…”
         <div align="center">
-            <img src="./FIG/04%20taskschd_0.PNG" alt="04 taskschd_0" width="909">
+            <img src="./FIG/04%20taskschd_0.PNG" alt="04 taskschd_0.png" width="909">
         </div>
     - 参照下列截图设置任务：
         <div align="center">
-            <img src="./FIG/05%20taskschd_1.PNG" alt="05 taskschd_1" width="474">
+            <img src="./FIG/05%20taskschd_1.PNG" alt="05 taskschd_1.png" width="474">
         </div>
         <div align="center">
-            <img src="./FIG/06%20taskschd_2.PNG" alt="06 taskschd_2" width="487">
+            <img src="./FIG/06%20taskschd_2.PNG" alt="06 taskschd_2.png" width="487">
         </div>
         <div align="center">
-            <img src="./FIG/07%20taskschd_3.PNG" alt="07 taskschd_3" width="489">
+            <img src="./FIG/07%20taskschd_3.PNG" alt="07 taskschd_3.png" width="489">
         </div>
         <div align="center">
-            <img src="./FIG/08%20taskschd_4.PNG" alt="08 taskschd_4" width="474">
+            <img src="./FIG/08%20taskschd_4.PNG" alt="08 taskschd_4.png" width="474">
         </div>
         <div align="center">
-            <img src="./FIG/09%20taskschd_5.PNG" alt="09 taskschd_5" width="474">
+            <img src="./FIG/09%20taskschd_5.PNG" alt="09 taskschd_5.png" width="474">
         </div>
         
 ## 补充说明
 - 根据我的经验，每次“登录”或“注销”后会有几秒到几十秒的时间无法加载出登录页面。如果你按照以上的截图设置了任务，那等一两分钟就好了。 
 - <span id="jump">不认识“地址栏”的看下图：</span>
     <div align="center">
-        <img src="./FIG/01%20cmd_currentDir.png" alt="01 cmd_currentDir" width="446">
+        <img src="./FIG/01%20cmd_currentDir.png" alt="01 cmd_currentDir.png" width="446">
     </div>
