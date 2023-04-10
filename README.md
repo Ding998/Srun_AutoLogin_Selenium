@@ -34,37 +34,37 @@
     - ```pyinstaller -F -w AutoLogin2UCAS.py```
     - 然后在当前目录下会产生几个文件和文件夹，打开dist文件夹，其中AutoLogin2UCAS.exe就是我们需要的可执行文件
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/02%20after_pyinstaller.png" alt="Editor" width="460">
+            <img src="./FIG/02%20after_pyinstaller.png" alt="Editor" width="460">
         </div>
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/03%20dist_exe.png" alt="Editor" width="547">
+            <img src="./FIG/03%20dist_exe.png" alt="Editor" width="547">
         </div>    
 5. 在任务计划程序中创建任务，周期性执行AutoLogin2UCAS.exe
     - 打开任务计划程序：<kbd>Win</kbd>+<kbd>R</kbd> &rArr; <kbd>t</kbd><kbd>a</kbd><kbd>s</kbd><kbd>k</kbd><kbd>s</kbd><kbd>c</kbd><kbd>h</kbd><kbd>d</kbd><kbd>.</kbd><kbd>m</kbd><kbd>s</kbd><kbd>c</kbd> &rArr; <kbd>Enter</kbd>
     - 点击右侧栏的“创建任务…”
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/04%20taskschd_0.PNG" alt="Editor" width="909">
+            <img src="./FIG/04%20taskschd_0.PNG" alt="Editor" width="909">
         </div>
     - 参照下列截图设置任务：
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/05%20taskschd_1.PNG" alt="Editor" width="474">
+            <img src="./FIG/05%20taskschd_1.PNG" alt="Editor" width="474">
         </div>
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/06%20taskschd_2.PNG" alt="Editor" width="487">
+            <img src="./FIG/06%20taskschd_2.PNG" alt="Editor" width="487">
         </div>
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/07%20taskschd_3.PNG" alt="Editor" width="489">
+            <img src="./FIG/07%20taskschd_3.PNG" alt="Editor" width="489">
         </div>
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/08%20taskschd_4.PNG" alt="Editor" width="474">
+            <img src="./FIG/08%20taskschd_4.PNG" alt="Editor" width="474">
         </div>
         <div align="center">
-            <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/09%20taskschd_5.PNG" alt="Editor" width="474">
+            <img src="./FIG/09%20taskschd_5.PNG" alt="Editor" width="474">
         </div>
         
 ## 补充说明
 - 根据我的经验，每次“登录”或“注销”后会有几秒到几十秒的时间无法加载出登录页面。如果你按照以上的截图设置了任务，那等一两分钟就好了。 
 - <span id="jump">不认识“地址栏”的看下图：</span>
     <div align="center">
-        <img src="https://github.com/Ding998/Srun_AutoLogin_Selenium/blob/main/FIG/01%20cmd_currentDir.png" alt="Editor" width="446">
+        <img src="./FIG/01%20cmd_currentDir.png" alt="Editor" width="446">
     </div>
